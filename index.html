@@ -1,11 +1,11 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./FOVRITE.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="./FOVRITE.ico" type="image/x-icon" />
-    <title>Ù¾Ø±ÙˆÙ†Ø¯Ù‡ ÙÙˆØ±Ù… Ù…Ø¹Ù„ÙˆÙ…Ø§ØªÛŒ ARAP</title>
+    <title>پرونده فورم معلوماتی ARAP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,8 +21,8 @@
     <!-- ===================== LOADING OVERLAY ===================== -->
     <div class="loading-overlay" id="loadingOverlay" style="display:none;">
       <div class="loading-overlay-content">
-        <img src="./LOADING.gif" alt="Ø¯Ø± Ø­Ø§Ù„ Ø¨Ø§Ø±Ú¯Ø°Ø§Ø±ÛŒ" class="loading-gif" />
-        <p class="loading-text" id="loadingText">Ø¯Ø± Ø­Ø§Ù„ Ø«Ø¨Øª Ù…Ø¹Ù„ÙˆÙ…Ø§Øª...</p>
+        <img src="./LOADING.gif" alt="در حال بارگذاری" class="loading-gif" />
+        <p class="loading-text" id="loadingText">در حال ثبت معلومات...</p>
       </div>
     </div>
 
@@ -32,8 +32,8 @@
         <div class="header-logo">
           <img src="./logo.png" alt="ARAP Logo" class="header-logo-img" />
           <div class="header-text">
-            <h1>ÙÙˆØ±Ù… Ù…Ø¹Ù„ÙˆÙ…Ø§ØªÛŒ Ù¾Ø±ÙˆÙ†Ø¯Ù‡ Ù‡Ø§ÛŒ ARAP Ú©Ø´ÙˆØ± Ø§Ù†Ú¯Ù„Ø³ØªØ§Ù†</h1>
-            <p>Ø¨Ø±Ù†Ø§Ù…Ù‡ Ø§Ø³Ú©Ø§Ù† Ù…Ø¬Ø¯Ø¯ Ùˆ Ù†Ù‚Ù„ Ù…Ú©Ø§Ù† Ù…ØªÙ‚Ø§Ø¶ÛŒØ§Ù† Ø§ÙØºØ§Ù† Ù‡Ø§</p>
+            <h1>فورم معلوماتی پرونده های ARAP کشور انگلستان</h1>
+            <p>برنامه اسکان مجدد و نقل مکان متقاضیان افغان ها</p>
           </div>
         </div>
       </div>
@@ -42,7 +42,7 @@
     <!-- ===================== PROGRESS BAR ===================== -->
     <div class="progress-container" id="progressContainer" style="display:none;">
       <div class="progress-info">
-        <span id="progressStep">Ù…Ø±Ø­Ù„Ù‡ Û± Ø§Ø² Û¸</span>
+        <span id="progressStep">مرحله ۱ از ۸</span>
       </div>
       <div class="progress-bar-bg">
         <div class="progress-bar-fill" id="progressBarFill"></div>
@@ -56,44 +56,44 @@
         <!-- ============ STEP 1: PERSONAL INFO ============ -->
         <div class="form-step" data-step="1">
           <div class="step-header">
-            <span class="step-icon">Û±</span>
+            <span class="step-icon">۱</span>
             <div>
-              <h2>Ø§Ø·Ù„Ø§Ø¹Ø§Øª Ø´Ø®ØµÛŒ</h2>
-              <p>Ù„Ø·ÙØ§Ù‹ Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø´Ø®ØµÛŒ Ø®ÙˆØ¯ Ø±Ø§ ÙˆØ§Ø±Ø¯ Ú©Ù†ÛŒØ¯. Ù…ÙˆØ§Ø±Ø¯ Ø¨Ø§ Ø¹Ù„Ø§Ù…Øª <span class="required">*</span> Ø§Ù„Ø²Ø§Ù…ÛŒ Ù‡Ø³ØªÙ†Ø¯.</p>
+              <h2>اطلاعات شخصی</h2>
+              <p>لطفاً معلومات شخصی خود را وارد کنید. موارد با علامت <span class="required">*</span> الزامی هستند.</p>
             </div>
           </div>
 
           <div class="field-group">
             <div class="field">
-              <label for="fullName">Ù†Ø§Ù… Ùˆ Ù†Ø§Ù… Ø®Ø§Ù†ÙˆØ§Ø¯Ú¯ÛŒ <span class="required">*</span></label>
-              <input type="text" id="fullName" name="fullName" placeholder="Ù…Ø«Ø§Ù„: Ù…Ø­Ù…Ø¯ Ø§Ø­Ù…Ø¯" />
+              <label for="fullName">نام و نام خانوادگی <span class="required">*</span></label>
+              <input type="text" id="fullName" name="fullName" placeholder="مثال: محمد احمد" />
               <span class="error-msg" id="error-fullName"></span>
             </div>
 
             <div class="field">
-              <label for="fathersName">Ù†Ø§Ù… Ù¾Ø¯Ø± <span class="required">*</span></label>
-              <input type="text" id="fathersName" name="fathersName" placeholder="Ù…Ø«Ø§Ù„: Ø¹Ø¨Ø¯Ø§Ù„Ù„Ù‡" />
+              <label for="fathersName">نام پدر <span class="required">*</span></label>
+              <input type="text" id="fathersName" name="fathersName" placeholder="مثال: عبدالله" />
               <span class="error-msg" id="error-fathersName"></span>
             </div>
 
             <div class="field-row">
               <div class="field">
-                <label for="dateOfBirth">ØªØ§Ø±ÛŒØ® ØªÙˆÙ„Ø¯ <span class="required">*</span></label>
+                <label for="dateOfBirth">تاریخ تولد <span class="required">*</span></label>
                 <input type="date" id="dateOfBirth" name="dateOfBirth" />
                 <span class="error-msg" id="error-dateOfBirth"></span>
               </div>
               <div class="field">
-                <label for="currentCountry">Ú©Ø´ÙˆØ± ÙØ¹Ù„ÛŒ Ù…Ø­Ù„ Ø§Ù‚Ø§Ù…Øª <span class="required">*</span></label>
+                <label for="currentCountry">کشور فعلی محل اقامت <span class="required">*</span></label>
                 <select id="currentCountry" name="currentCountry">
-                  <option value="">-- Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ --</option>
-                  <option value="Ø§ÙØºØ§Ù†Ø³ØªØ§Ù†">Ø§ÙØºØ§Ù†Ø³ØªØ§Ù†</option>
-                  <option value="Ø§ÛŒØ±Ø§Ù†">Ø§ÛŒØ±Ø§Ù†</option>
-                  <option value="Ù¾Ø§Ú©Ø³ØªØ§Ù†">Ù¾Ø§Ú©Ø³ØªØ§Ù†</option>
-                  <option value="Ø¨Ø±ÛŒØªØ§Ù†ÛŒØ§">Ø¨Ø±ÛŒØªØ§Ù†ÛŒØ§</option>
-                  <option value="Ø¢Ù„Ù…Ø§Ù†">Ø¢Ù„Ù…Ø§Ù†</option>
-                  <option value="ØªØ±Ú©ÛŒÙ‡">ØªØ±Ú©ÛŒÙ‡</option>
-                  <option value="Ù‡Ù†Ø¯">Ù‡Ù†Ø¯</option>
-                  <option value="Ø³Ø§ÛŒØ±">Ø³Ø§ÛŒØ±</option>
+                  <option value="">-- انتخاب کنید --</option>
+                  <option value="افغانستان">افغانستان</option>
+                  <option value="ایران">ایران</option>
+                  <option value="پاکستان">پاکستان</option>
+                  <option value="بریتانیا">بریتانیا</option>
+                  <option value="آلمان">آلمان</option>
+                  <option value="ترکیه">ترکیه</option>
+                  <option value="هند">هند</option>
+                  <option value="سایر">سایر</option>
                 </select>
                 <span class="error-msg" id="error-currentCountry"></span>
               </div>
@@ -101,19 +101,19 @@
 
             <div class="field-row">
               <div class="field">
-                <label for="currentCity">Ø´Ù‡Ø± ÙØ¹Ù„ÛŒ <span class="required">*</span></label>
-                <input type="text" id="currentCity" name="currentCity" placeholder="Ù…Ø«Ø§Ù„: Ú©Ø§Ø¨Ù„" />
+                <label for="currentCity">شهر فعلی <span class="required">*</span></label>
+                <input type="text" id="currentCity" name="currentCity" placeholder="مثال: کابل" />
                 <span class="error-msg" id="error-currentCity"></span>
               </div>
               <div class="field">
-                <label for="phoneWhatsapp">Ø´Ù…Ø§Ø±Ù‡ ØªÙ„ÙÙ† / WhatsApp <span class="required">*</span></label>
-                <input type="tel" id="phoneWhatsapp" name="phoneWhatsapp" placeholder="Ù…Ø«Ø§Ù„: +93 700 123 456" />
+                <label for="phoneWhatsapp">شماره تلفن / WhatsApp <span class="required">*</span></label>
+                <input type="tel" id="phoneWhatsapp" name="phoneWhatsapp" placeholder="مثال: +93 700 123 456" />
                 <span class="error-msg" id="error-phoneWhatsapp"></span>
               </div>
             </div>
 
             <div class="field">
-              <label for="email">Ø§ÛŒÙ…ÛŒÙ„ <span class="required">*</span></label>
+              <label for="email">ایمیل <span class="required">*</span></label>
               <input type="email" id="email" name="email" placeholder="example@email.com" />
               <span class="error-msg" id="error-email"></span>
             </div>
@@ -123,113 +123,113 @@
         <!-- ============ STEP 2: ARAP APPLICATION ============ -->
         <div class="form-step" data-step="2" style="display:none;">
           <div class="step-header">
-            <span class="step-icon">Û²</span>
+            <span class="step-icon">۲</span>
             <div>
-              <h2>Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ù‚Ø¨Ù„ÛŒ ARAP</h2>
-              <p>Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø¯Ø±Ø¨Ø§Ø±Ù‡ Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ù‚Ø¨Ù„ÛŒ ARAP Ø´Ù…Ø§. (Ø§Ø®ØªÛŒØ§Ø±ÛŒ)</p>
+              <h2>معلومات درخواست قبلی ARAP</h2>
+              <p>معلومات درباره درخواست قبلی ARAP شما. (اختیاری)</p>
             </div>
           </div>
 
           <div class="field-group">
             <div class="field">
-              <label for="arapPreviouslyApplied">Ø¢ÛŒØ§ Ù‚Ø¨Ù„Ø§Ù‹ Ø¨Ø±Ø§ÛŒ ARAP Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ø¯Ø§Ø¯Ù‡â€ŒØ§ÛŒØ¯ØŸ</label>
+              <label for="arapPreviouslyApplied">آیا قبلاً برای ARAP درخواست داده‌اید؟</label>
               <select id="arapPreviouslyApplied" name="arapPreviouslyApplied">
-                <option value="">-- Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ --</option>
-                <option value="Ø¨Ù„Ù‡">Ø¨Ù„Ù‡</option>
-                <option value="Ø®ÛŒØ±">Ø®ÛŒØ±</option>
-                <option value="Ù†Ù…ÛŒâ€ŒØ¯Ø§Ù†Ù…">Ù†Ù…ÛŒâ€ŒØ¯Ø§Ù†Ù…</option>
+                <option value="">-- انتخاب کنید --</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+                <option value="نمی‌دانم">نمی‌دانم</option>
               </select>
             </div>
 
             <div class="field-row">
               <div class="field">
-                <label for="arapApplicationDate">ØªØ§Ø±ÛŒØ® Ø¯Ø±Ø®ÙˆØ§Ø³Øª</label>
+                <label for="arapApplicationDate">تاریخ درخواست</label>
                 <input type="date" id="arapApplicationDate" name="arapApplicationDate" />
               </div>
               <div class="field">
-                <label for="applicationReferenceNumber">Ø´Ù…Ø§Ø±Ù‡ Ù…Ø±Ø¬Ø¹ / Reference Number</label>
-                <input type="text" id="applicationReferenceNumber" name="applicationReferenceNumber" placeholder="Ù…Ø«Ø§Ù„: ARAP-12345" />
+                <label for="applicationReferenceNumber">شماره مرجع / Reference Number</label>
+                <input type="text" id="applicationReferenceNumber" name="applicationReferenceNumber" placeholder="مثال: ARAP-12345" />
               </div>
             </div>
 
             <div class="field-row">
               <div class="field">
-                <label for="uan">Ø´Ù…Ø§Ø±Ù‡ UAN</label>
-                <input type="text" id="uan" name="uan" placeholder="Ø´Ù…Ø§Ø±Ù‡ UAN Ø´Ù…Ø§" />
+                <label for="uan">شماره UAN</label>
+                <input type="text" id="uan" name="uan" placeholder="شماره UAN شما" />
               </div>
               <div class="field">
-                <label for="currentCaseStatus">ÙˆØ¶Ø¹ÛŒØª ÙØ¹Ù„ÛŒ Ù¾Ø±ÙˆÙ†Ø¯Ù‡</label>
+                <label for="currentCaseStatus">وضعیت فعلی پرونده</label>
                 <select id="currentCaseStatus" name="currentCaseStatus">
-                  <option value="">-- Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ --</option>
-                  <option value="Ø¯Ø± Ø­Ø§Ù„ Ø¨Ø±Ø±Ø³ÛŒ">Ø¯Ø± Ø­Ø§Ù„ Ø¨Ø±Ø±Ø³ÛŒ</option>
-                  <option value="Ø±Ø¯ Ø´Ø¯Ù‡">Ø±Ø¯ Ø´Ø¯Ù‡</option>
-                  <option value="Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø¨ÛŒØ´ØªØ±">Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø¨ÛŒØ´ØªØ±</option>
-                  <option value="Ø¯Ø±Ø®ÙˆØ§Ø³Øª Review / Ø¨Ø§Ø²Ø¨ÛŒÙ†ÛŒ">Ø¯Ø±Ø®ÙˆØ§Ø³Øª Review / Ø¨Ø§Ø²Ø¨ÛŒÙ†ÛŒ</option>
-                  <option value="Ù†ØªÛŒØ¬Ù‡ Review Ø¯Ø±ÛŒØ§ÙØª Ø´Ø¯Ù‡">Ù†ØªÛŒØ¬Ù‡ Review Ø¯Ø±ÛŒØ§ÙØª Ø´Ø¯Ù‡</option>
-                  <option value="Ù†Ù…ÛŒâ€ŒØ¯Ø§Ù†Ù…">Ù†Ù…ÛŒâ€ŒØ¯Ø§Ù†Ù…</option>
-                  <option value="Ø³Ø§ÛŒØ±">Ø³Ø§ÛŒØ±</option>
+                  <option value="">-- انتخاب کنید --</option>
+                  <option value="در حال بررسی">در حال بررسی</option>
+                  <option value="رد شده">رد شده</option>
+                  <option value="درخواست معلومات بیشتر">درخواست معلومات بیشتر</option>
+                  <option value="درخواست Review / بازبینی">درخواست Review / بازبینی</option>
+                  <option value="نتیجه Review دریافت شده">نتیجه Review دریافت شده</option>
+                  <option value="نمی‌دانم">نمی‌دانم</option>
+                  <option value="سایر">سایر</option>
                 </select>
               </div>
             </div>
 
             <div class="field-row">
               <div class="field">
-                <label for="previousApplicationEmail">Ø§ÛŒÙ…ÛŒÙ„ Ø§Ø³ØªÙØ§Ø¯Ù‡â€ŒØ´Ø¯Ù‡ Ù‡Ù†Ú¯Ø§Ù… Ø¯Ø±Ø®ÙˆØ§Ø³Øª</label>
+                <label for="previousApplicationEmail">ایمیل استفاده‌شده هنگام درخواست</label>
                 <input type="email" id="previousApplicationEmail" name="previousApplicationEmail" placeholder="example@email.com" />
               </div>
               <div class="field">
-                <label for="previousApplicationPhone">Ø´Ù…Ø§Ø±Ù‡ ØªÙ„ÙÙ† Ø§Ø³ØªÙØ§Ø¯Ù‡â€ŒØ´Ø¯Ù‡ Ù‡Ù†Ú¯Ø§Ù… Ø¯Ø±Ø®ÙˆØ§Ø³Øª</label>
-                <input type="tel" id="previousApplicationPhone" name="previousApplicationPhone" placeholder="Ø´Ù…Ø§Ø±Ù‡ ØªÙ„ÙÙ†" />
+                <label for="previousApplicationPhone">شماره تلفن استفاده‌شده هنگام درخواست</label>
+                <input type="tel" id="previousApplicationPhone" name="previousApplicationPhone" placeholder="شماره تلفن" />
               </div>
             </div>
 
             <div class="field">
-              <label for="currentCaseExplanation">ØªÙˆØ¶ÛŒØ­Ø§Øª ÙˆØ¶Ø¹ÛŒØª ÙØ¹Ù„ÛŒ Ù¾Ø±ÙˆÙ†Ø¯Ù‡</label>
-              <textarea id="currentCaseExplanation" name="currentCaseExplanation" rows="3" placeholder="Ø¯Ø± ØµÙˆØ±Øª ØªÙ…Ø§ÛŒÙ„ØŒ ØªÙˆØ¶ÛŒØ­ Ø¯Ù‡ÛŒØ¯..."></textarea>
+              <label for="currentCaseExplanation">توضیحات وضعیت فعلی پرونده</label>
+              <textarea id="currentCaseExplanation" name="currentCaseExplanation" rows="3" placeholder="در صورت تمایل، توضیح دهید..."></textarea>
             </div>
 
             <hr class="divider" />
 
             <div class="field">
-              <label for="previousRefusal">Ø¢ÛŒØ§ Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ù‚Ø¨Ù„ÛŒ Ø±Ø¯ Ø´Ø¯Ù‡ Ø§Ø³ØªØŸ</label>
+              <label for="previousRefusal">آیا درخواست قبلی رد شده است؟</label>
               <select id="previousRefusal" name="previousRefusal">
-                <option value="">-- Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ --</option>
-                <option value="Ø¨Ù„Ù‡">Ø¨Ù„Ù‡</option>
-                <option value="Ø®ÛŒØ±">Ø®ÛŒØ±</option>
-                <option value="Ù†Ù…ÛŒâ€ŒØ¯Ø§Ù†Ù…">Ù†Ù…ÛŒâ€ŒØ¯Ø§Ù†Ù…</option>
+                <option value="">-- انتخاب کنید --</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+                <option value="نمی‌دانم">نمی‌دانم</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="refusalDate">ØªØ§Ø±ÛŒØ® Ø±Ø¯</label>
+              <label for="refusalDate">تاریخ رد</label>
               <input type="date" id="refusalDate" name="refusalDate" />
             </div>
 
             <div class="field">
-              <label for="refusalReason">Ø¯Ù„ÛŒÙ„ Ø±Ø¯</label>
-              <textarea id="refusalReason" name="refusalReason" rows="3" placeholder="Ø¯Ø± ØµÙˆØ±Øª ØªÙ…Ø§ÛŒÙ„ØŒ Ø¯Ù„ÛŒÙ„ Ø±Ø¯ Ø±Ø§ ØªÙˆØ¶ÛŒØ­ Ø¯Ù‡ÛŒØ¯..."></textarea>
+              <label for="refusalReason">دلیل رد</label>
+              <textarea id="refusalReason" name="refusalReason" rows="3" placeholder="در صورت تمایل، دلیل رد را توضیح دهید..."></textarea>
             </div>
 
             <hr class="divider" />
 
             <div class="field">
-              <label for="reviewSubmitted">Ø¢ÛŒØ§ Ø¯Ø±Ø®ÙˆØ§Ø³Øª Review / Ø¨Ø§Ø²Ø¨ÛŒÙ†ÛŒ Ø¯Ø§Ø¯Ù‡â€ŒØ§ÛŒØ¯ØŸ</label>
+              <label for="reviewSubmitted">آیا درخواست Review / بازبینی داده‌اید؟</label>
               <select id="reviewSubmitted" name="reviewSubmitted">
-                <option value="">-- Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ --</option>
-                <option value="Ø¨Ù„Ù‡">Ø¨Ù„Ù‡</option>
-                <option value="Ø®ÛŒØ±">Ø®ÛŒØ±</option>
-                <option value="Ø¯Ø± Ø­Ø§Ù„ Ø§Ù†Ø¬Ø§Ù…">Ø¯Ø± Ø­Ø§Ù„ Ø§Ù†Ø¬Ø§Ù…</option>
+                <option value="">-- انتخاب کنید --</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+                <option value="در حال انجام">در حال انجام</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="reviewDate">ØªØ§Ø±ÛŒØ® Review</label>
+              <label for="reviewDate">تاریخ Review</label>
               <input type="date" id="reviewDate" name="reviewDate" />
             </div>
 
             <div class="field">
-              <label for="reviewResult">Ù†ØªÛŒØ¬Ù‡ Review</label>
-              <textarea id="reviewResult" name="reviewResult" rows="3" placeholder="Ù†ØªÛŒØ¬Ù‡ Ø¨Ø§Ø²Ø¨ÛŒÙ†ÛŒ Ø±Ø§ ØªÙˆØ¶ÛŒØ­ Ø¯Ù‡ÛŒØ¯..."></textarea>
+              <label for="reviewResult">نتیجه Review</label>
+              <textarea id="reviewResult" name="reviewResult" rows="3" placeholder="نتیجه بازبینی را توضیح دهید..."></textarea>
             </div>
           </div>
         </div>
@@ -237,60 +237,60 @@
         <!-- ============ STEP 3: EMPLOYMENT ============ -->
         <div class="form-step" data-step="3" style="display:none;">
           <div class="step-header">
-            <span class="step-icon">Û³</span>
+            <span class="step-icon">۳</span>
             <div>
-              <h2>Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ú©Ø§Ø±ÛŒ</h2>
-              <p>Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø¯Ø±Ø¨Ø§Ø±Ù‡ ÙˆØ¸ÛŒÙÙ‡ Ùˆ Ù‡Ù…Ú©Ø§Ø±ÛŒ Ù‚Ø¨Ù„ÛŒ Ø´Ù…Ø§. (Ø§Ø®ØªÛŒØ§Ø±ÛŒ)</p>
+              <h2>معلومات کاری</h2>
+              <p>معلومات درباره وظیفه و همکاری قبلی شما. (اختیاری)</p>
             </div>
           </div>
 
           <div class="field-group">
             <div class="field">
-              <label for="employmentOrganization">Ù†Ø§Ù… Ø³Ø§Ø²Ù…Ø§Ù† / Ø§Ø¯Ø§Ø±Ù‡ Ù‚Ø¨Ù„ÛŒ</label>
-              <input type="text" id="employmentOrganization" name="employmentOrganization" placeholder="Ù…Ø«Ø§Ù„: ÙˆØ²Ø§Ø±Øª Ø¯ÙØ§Ø¹" />
+              <label for="employmentOrganization">نام سازمان / اداره قبلی</label>
+              <input type="text" id="employmentOrganization" name="employmentOrganization" placeholder="مثال: وزارت دفاع" />
             </div>
 
             <div class="field-row">
               <div class="field">
-                <label for="jobTitle">ÙˆØ¸ÛŒÙÙ‡ / Ø³Ù…Øª</label>
-                <input type="text" id="jobTitle" name="jobTitle" placeholder="Ù…Ø«Ø§Ù„: Ù…ØªØ±Ø¬Ù…" />
+                <label for="jobTitle">وظیفه / سمت</label>
+                <input type="text" id="jobTitle" name="jobTitle" placeholder="مثال: مترجم" />
               </div>
               <div class="field">
-                <label for="unitDepartment">Ø¨Ø®Ø´ / Unit</label>
-                <input type="text" id="unitDepartment" name="unitDepartment" placeholder="Ù†Ø§Ù… Ø¨Ø®Ø´ ÛŒØ§ ÙˆØ§Ø­Ø¯" />
+                <label for="unitDepartment">بخش / Unit</label>
+                <input type="text" id="unitDepartment" name="unitDepartment" placeholder="نام بخش یا واحد" />
               </div>
             </div>
 
             <div class="field">
-              <label for="employmentLocation">Ù…Ø­Ù„ Ú©Ø§Ø±</label>
-              <input type="text" id="employmentLocation" name="employmentLocation" placeholder="Ù…Ø«Ø§Ù„: Ú©Ø§Ø¨Ù„" />
+              <label for="employmentLocation">محل کار</label>
+              <input type="text" id="employmentLocation" name="employmentLocation" placeholder="مثال: کابل" />
             </div>
 
             <div class="field-row">
               <div class="field">
-                <label for="employmentStartDate">ØªØ§Ø±ÛŒØ® Ø´Ø±ÙˆØ¹ Ú©Ø§Ø±</label>
+                <label for="employmentStartDate">تاریخ شروع کار</label>
                 <input type="date" id="employmentStartDate" name="employmentStartDate" />
               </div>
               <div class="field">
-                <label for="employmentEndDate">ØªØ§Ø±ÛŒØ® Ù¾Ø§ÛŒØ§Ù† Ú©Ø§Ø±</label>
+                <label for="employmentEndDate">تاریخ پایان کار</label>
                 <input type="date" id="employmentEndDate" name="employmentEndDate" />
               </div>
             </div>
 
             <div class="field-row">
               <div class="field">
-                <label for="employeeId">Ø´Ù…Ø§Ø±Ù‡ Ú©Ø§Ø±Ù…Ù†Ø¯ÛŒ</label>
-                <input type="text" id="employeeId" name="employeeId" placeholder="Ø´Ù…Ø§Ø±Ù‡ Ú©Ø§Ø±Ù…Ù†Ø¯ÛŒ Ø´Ù…Ø§" />
+                <label for="employeeId">شماره کارمندی</label>
+                <input type="text" id="employeeId" name="employeeId" placeholder="شماره کارمندی شما" />
               </div>
               <div class="field">
-                <label for="projectProgram">Ù†Ø§Ù… Ù¾Ø±ÙˆÚ˜Ù‡ / Ø¨Ø±Ù†Ø§Ù…Ù‡</label>
-                <input type="text" id="projectProgram" name="projectProgram" placeholder="Ù†Ø§Ù… Ù¾Ø±ÙˆÚ˜Ù‡ ÛŒØ§ Ø¨Ø±Ù†Ø§Ù…Ù‡" />
+                <label for="projectProgram">نام پروژه / برنامه</label>
+                <input type="text" id="projectProgram" name="projectProgram" placeholder="نام پروژه یا برنامه" />
               </div>
             </div>
 
             <div class="field">
-              <label for="employmentDescription">Ø´Ø±Ø­ ÙˆØ¸ÛŒÙÙ‡ Ùˆ Ù‡Ù…Ú©Ø§Ø±ÛŒ</label>
-              <textarea id="employmentDescription" name="employmentDescription" rows="4" placeholder="Ù†Ù‚Ø´ Ùˆ Ù‡Ù…Ú©Ø§Ø±ÛŒ Ø®ÙˆØ¯ Ø±Ø§ ØªÙˆØ¶ÛŒØ­ Ø¯Ù‡ÛŒØ¯..."></textarea>
+              <label for="employmentDescription">شرح وظیفه و همکاری</label>
+              <textarea id="employmentDescription" name="employmentDescription" rows="4" placeholder="نقش و همکاری خود را توضیح دهید..."></textarea>
             </div>
           </div>
         </div>
@@ -298,20 +298,20 @@
         <!-- ============ STEP 4: FAMILY MEMBERS ============ -->
         <div class="form-step" data-step="4" style="display:none;">
           <div class="step-header">
-            <span class="step-icon">Û´</span>
+            <span class="step-icon">۴</span>
             <div>
-              <h2>Ø§Ø¹Ø¶Ø§ÛŒ Ø®Ø§Ù†ÙˆØ§Ø¯Ù‡</h2>
-              <p>Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø§Ø¹Ø¶Ø§ÛŒ Ø®Ø§Ù†ÙˆØ§Ø¯Ù‡ Ú©Ù‡ Ø¯Ø± Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ù‚Ø¨Ù„ÛŒ Ø´Ø§Ù…Ù„ Ø¨ÙˆØ¯Ù†Ø¯. (Ø§Ø®ØªÛŒØ§Ø±ÛŒ)</p>
+              <h2>اعضای خانواده</h2>
+              <p>معلومات اعضای خانواده که در درخواست قبلی شامل بودند. (اختیاری)</p>
             </div>
           </div>
 
           <div class="field-group">
             <div class="field">
-              <label for="familyMembersIncluded">Ø¢ÛŒØ§ Ø§Ø¹Ø¶Ø§ÛŒ Ø®Ø§Ù†ÙˆØ§Ø¯Ù‡ Ø¯Ø± Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ù‚Ø¨Ù„ÛŒ Ø´Ø§Ù…Ù„ Ø¨ÙˆØ¯Ù†Ø¯ØŸ</label>
+              <label for="familyMembersIncluded">آیا اعضای خانواده در درخواست قبلی شامل بودند؟</label>
               <select id="familyMembersIncluded" name="familyMembersIncluded">
-                <option value="">-- Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ --</option>
-                <option value="Ø¨Ù„Ù‡">Ø¨Ù„Ù‡</option>
-                <option value="Ø®ÛŒØ±">Ø®ÛŒØ±</option>
+                <option value="">-- انتخاب کنید --</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
               </select>
             </div>
 
@@ -321,7 +321,7 @@
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn-icon">
                 <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               </svg>
-              Ø§ÙØ²ÙˆØ¯Ù† Ø¹Ø¶Ùˆ Ø®Ø§Ù†ÙˆØ§Ø¯Ù‡
+              افزودن عضو خانواده
             </button>
           </div>
         </div>
@@ -329,46 +329,46 @@
         <!-- ============ STEP 5: SECURITY / THREAT ============ -->
         <div class="form-step" data-step="5" style="display:none;">
           <div class="step-header">
-            <span class="step-icon">Ûµ</span>
+            <span class="step-icon">۵</span>
             <div>
-              <h2>ØªÙ‡Ø¯ÛŒØ¯ Ùˆ Ø§Ù…Ù†ÛŒØª</h2>
-              <p>Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø¯Ø±Ø¨Ø§Ø±Ù‡ ØªÙ‡Ø¯ÛŒØ¯Ù‡Ø§ÛŒ Ø§Ø­ØªÙ…Ø§Ù„ÛŒ. (Ø§Ø®ØªÛŒØ§Ø±ÛŒ)</p>
+              <h2>تهدید و امنیت</h2>
+              <p>معلومات درباره تهدیدهای احتمالی. (اختیاری)</p>
             </div>
           </div>
 
           <div class="field-group">
             <div class="field">
-              <label for="threatened">Ø¢ÛŒØ§ Ø¯Ø± Ù…Ø¹Ø±Ø¶ ØªÙ‡Ø¯ÛŒØ¯ Ù‡Ø³ØªÛŒØ¯ØŸ</label>
+              <label for="threatened">آیا در معرض تهدید هستید؟</label>
               <select id="threatened" name="threatened">
-                <option value="">-- Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ --</option>
-                <option value="Ø¨Ù„Ù‡">Ø¨Ù„Ù‡</option>
-                <option value="Ø®ÛŒØ±">Ø®ÛŒØ±</option>
-                <option value="ØªØ±Ø¬ÛŒØ­ Ù…ÛŒâ€ŒØ¯Ù‡Ù… Ø¬ÙˆØ§Ø¨ Ù†Ø¯Ù‡Ù…">ØªØ±Ø¬ÛŒØ­ Ù…ÛŒâ€ŒØ¯Ù‡Ù… Ø¬ÙˆØ§Ø¨ Ù†Ø¯Ù‡Ù…</option>
+                <option value="">-- انتخاب کنید --</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+                <option value="ترجیح می‌دهم جواب ندهم">ترجیح می‌دهم جواب ندهم</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="threatDescription">Ù†ÙˆØ¹ / Ø´Ø±Ø­ ØªÙ‡Ø¯ÛŒØ¯</label>
-              <textarea id="threatDescription" name="threatDescription" rows="3" placeholder="Ø¯Ø± ØµÙˆØ±Øª ØªÙ…Ø§ÛŒÙ„ØŒ Ù†ÙˆØ¹ ØªÙ‡Ø¯ÛŒØ¯ Ø±Ø§ ØªÙˆØ¶ÛŒØ­ Ø¯Ù‡ÛŒØ¯..."></textarea>
+              <label for="threatDescription">نوع / شرح تهدید</label>
+              <textarea id="threatDescription" name="threatDescription" rows="3" placeholder="در صورت تمایل، نوع تهدید را توضیح دهید..."></textarea>
             </div>
 
             <div class="field">
-              <label for="threatDate">ØªØ§Ø±ÛŒØ® ÛŒØ§ Ù…Ø­Ù„ Ø­Ø§Ø¯Ø«Ù‡</label>
-              <input type="text" id="threatDate" name="threatDate" placeholder="ØªØ§Ø±ÛŒØ® ØªÙ‚Ø±ÛŒØ¨ÛŒ ÛŒØ§ Ù…Ø­Ù„ Ø­Ø§Ø¯Ø«Ù‡" />
+              <label for="threatDate">تاریخ یا محل حادثه</label>
+              <input type="text" id="threatDate" name="threatDate" placeholder="تاریخ تقریبی یا محل حادثه" />
             </div>
 
             <div class="field">
-              <label for="familyThreatened">Ø¢ÛŒØ§ Ø§Ø¹Ø¶Ø§ÛŒ Ø®Ø§Ù†ÙˆØ§Ø¯Ù‡ Ù†ÛŒØ² ØªÙ‡Ø¯ÛŒØ¯ Ø´Ø¯Ù‡â€ŒØ§Ù†Ø¯ØŸ</label>
+              <label for="familyThreatened">آیا اعضای خانواده نیز تهدید شده‌اند؟</label>
               <select id="familyThreatened" name="familyThreatened">
-                <option value="">-- Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ --</option>
-                <option value="Ø¨Ù„Ù‡">Ø¨Ù„Ù‡</option>
-                <option value="Ø®ÛŒØ±">Ø®ÛŒØ±</option>
-                <option value="ØªØ±Ø¬ÛŒØ­ Ù…ÛŒâ€ŒØ¯Ù‡Ù… Ø¬ÙˆØ§Ø¨ Ù†Ø¯Ù‡Ù…">ØªØ±Ø¬ÛŒØ­ Ù…ÛŒâ€ŒØ¯Ù‡Ù… Ø¬ÙˆØ§Ø¨ Ù†Ø¯Ù‡Ù…</option>
+                <option value="">-- انتخاب کنید --</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
+                <option value="ترجیح می‌دهم جواب ندهم">ترجیح می‌دهم جواب ندهم</option>
               </select>
             </div>
 
             <p class="sensitive-note">
-              Ø´Ù…Ø§ Ù…Ù„Ø²Ù… Ø¨Ù‡ Ø§Ø±Ø§Ø¦Ù‡ Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø­Ø³Ø§Ø³ Ù†ÛŒØ³ØªÛŒØ¯. Ø§ÛŒÙ† Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ú©Ø§Ù…Ù„Ø§Ù‹ Ø§Ø®ØªÛŒØ§Ø±ÛŒ Ø§Ø³Øª Ùˆ Ø¯Ø± ØµÙˆØ±Øª ØªÙ…Ø§ÛŒÙ„ Ù¾Ø± Ú©Ù†ÛŒØ¯.
+              شما ملزم به ارائه معلومات حساس نیستید. این معلومات کاملاً اختیاری است و در صورت تمایل پر کنید.
             </p>
           </div>
         </div>
@@ -376,64 +376,64 @@
         <!-- ============ STEP 6: IMMIGRATION ============ -->
         <div class="form-step" data-step="6" style="display:none;">
           <div class="step-header">
-            <span class="step-icon">Û¶</span>
+            <span class="step-icon">۶</span>
             <div>
-              <h2>Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ù…Ù‡Ø§Ø¬Ø±Øª</h2>
-              <p>Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø¯Ø±Ø¨Ø§Ø±Ù‡ ÙˆØ¶Ø¹ÛŒØª Ù…Ù‡Ø§Ø¬Ø±ØªÛŒ Ùˆ Ø§Ù‚Ø§Ù…Øª. (Ø§Ø®ØªÛŒØ§Ø±ÛŒ)</p>
+              <h2>معلومات مهاجرت</h2>
+              <p>معلومات درباره وضعیت مهاجرتی و اقامت. (اختیاری)</p>
             </div>
           </div>
 
           <div class="field-group">
             <div class="field-row">
               <div class="field">
-                <label for="currentVisaResidenceType">Ù†ÙˆØ¹ Ø§Ù‚Ø§Ù…Øª ÙØ¹Ù„ÛŒ</label>
-                <input type="text" id="currentVisaResidenceType" name="currentVisaResidenceType" placeholder="Ù…Ø«Ø§Ù„: ÙˆÛŒØ²Ø§ÛŒ Ú©Ø§Ø±" />
+                <label for="currentVisaResidenceType">نوع اقامت فعلی</label>
+                <input type="text" id="currentVisaResidenceType" name="currentVisaResidenceType" placeholder="مثال: ویزای کار" />
               </div>
               <div class="field">
-                <label for="residenceExpiryDate">ØªØ§Ø±ÛŒØ® Ø§Ø¹ØªØ¨Ø§Ø± Ø§Ù‚Ø§Ù…Øª</label>
+                <label for="residenceExpiryDate">تاریخ اعتبار اقامت</label>
                 <input type="date" id="residenceExpiryDate" name="residenceExpiryDate" />
               </div>
             </div>
 
             <div class="field">
-              <label for="previousUKTravel">Ø¢ÛŒØ§ Ù‚Ø¨Ù„Ø§Ù‹ Ø¨Ù‡ Ø¨Ø±ÛŒØªØ§Ù†ÛŒØ§ Ø³ÙØ± Ú©Ø±Ø¯Ù‡â€ŒØ§ÛŒØ¯ØŸ</label>
+              <label for="previousUKTravel">آیا قبلاً به بریتانیا سفر کرده‌اید؟</label>
               <select id="previousUKTravel" name="previousUKTravel">
-                <option value="">-- Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ --</option>
-                <option value="Ø¨Ù„Ù‡">Ø¨Ù„Ù‡</option>
-                <option value="Ø®ÛŒØ±">Ø®ÛŒØ±</option>
+                <option value="">-- انتخاب کنید --</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="previousUKVisa">Ø¢ÛŒØ§ Ù‚Ø¨Ù„Ø§Ù‹ ÙˆÛŒØ²Ø§ÛŒ Ø¨Ø±ÛŒØªØ§Ù†ÛŒØ§ Ø¯Ø§Ø´ØªÙ‡â€ŒØ§ÛŒØ¯ØŸ</label>
+              <label for="previousUKVisa">آیا قبلاً ویزای بریتانیا داشته‌اید؟</label>
               <select id="previousUKVisa" name="previousUKVisa">
-                <option value="">-- Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ --</option>
-                <option value="Ø¨Ù„Ù‡">Ø¨Ù„Ù‡</option>
-                <option value="Ø®ÛŒØ±">Ø®ÛŒØ±</option>
+                <option value="">-- انتخاب کنید --</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="otherUKImmigrationApplication">Ø¢ÛŒØ§ Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ù…Ù‡Ø§Ø¬Ø±ØªÛŒ Ø¯ÛŒÚ¯Ø±ÛŒ Ø¯Ø± Ø¨Ø±ÛŒØªØ§Ù†ÛŒØ§ Ø¯Ø§Ø´ØªÙ‡â€ŒØ§ÛŒØ¯ØŸ</label>
+              <label for="otherUKImmigrationApplication">آیا درخواست مهاجرتی دیگری در بریتانیا داشته‌اید؟</label>
               <select id="otherUKImmigrationApplication" name="otherUKImmigrationApplication">
-                <option value="">-- Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ --</option>
-                <option value="Ø¨Ù„Ù‡">Ø¨Ù„Ù‡</option>
-                <option value="Ø®ÛŒØ±">Ø®ÛŒØ±</option>
+                <option value="">-- انتخاب کنید --</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="otherCountryImmigrationCase">Ø¢ÛŒØ§ Ø¯Ø± Ú©Ø´ÙˆØ± Ø¯ÛŒÚ¯Ø±ÛŒ Ù¾Ø±ÙˆÙ†Ø¯Ù‡ Ù…Ù‡Ø§Ø¬Ø±ØªÛŒ Ø¯Ø§Ø±ÛŒØ¯ØŸ</label>
+              <label for="otherCountryImmigrationCase">آیا در کشور دیگری پرونده مهاجرتی دارید؟</label>
               <select id="otherCountryImmigrationCase" name="otherCountryImmigrationCase">
-                <option value="">-- Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ --</option>
-                <option value="Ø¨Ù„Ù‡">Ø¨Ù„Ù‡</option>
-                <option value="Ø®ÛŒØ±">Ø®ÛŒØ±</option>
+                <option value="">-- انتخاب کنید --</option>
+                <option value="بله">بله</option>
+                <option value="خیر">خیر</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="additionalImmigrationInfo">ØªÙˆØ¶ÛŒØ­Ø§Øª Ø§Ø¶Ø§ÙÛŒ Ù…Ù‡Ø§Ø¬Ø±ØªÛŒ</label>
-              <textarea id="additionalImmigrationInfo" name="additionalImmigrationInfo" rows="3" placeholder="Ø¯Ø± ØµÙˆØ±Øª ØªÙ…Ø§ÛŒÙ„ØŒ ØªÙˆØ¶ÛŒØ­ Ø¯Ù‡ÛŒØ¯..."></textarea>
+              <label for="additionalImmigrationInfo">توضیحات اضافی مهاجرتی</label>
+              <textarea id="additionalImmigrationInfo" name="additionalImmigrationInfo" rows="3" placeholder="در صورت تمایل، توضیح دهید..."></textarea>
             </div>
           </div>
         </div>
@@ -441,142 +441,142 @@
         <!-- ============ STEP 7: DOCUMENT UPLOADS ============ -->
         <div class="form-step" data-step="7" style="display:none;">
           <div class="step-header">
-            <span class="step-icon">Û·</span>
+            <span class="step-icon">۷</span>
             <div>
-              <h2>Ø¨Ø§Ø±Ú¯Ø°Ø§Ø±ÛŒ Ù…Ø¯Ø§Ø±Ú©</h2>
-              <p>Ù…Ø¯Ø§Ø±Ú© Ù…Ø±ØªØ¨Ø· Ø±Ø§ Ù…ÛŒâ€ŒØªÙˆØ§Ù†ÛŒØ¯ Ø¨Ø§Ø±Ú¯Ø°Ø§Ø±ÛŒ Ú©Ù†ÛŒØ¯. (Ø§Ø®ØªÛŒØ§Ø±ÛŒ)</p>
+              <h2>بارگذاری مدارک</h2>
+              <p>مدارک مرتبط را می‌توانید بارگذاری کنید. (اختیاری)</p>
             </div>
           </div>
 
           <div class="field-group">
-            <p class="upload-note">ÙØ±Ù…Øªâ€ŒÙ‡Ø§ÛŒ Ù…Ø¬Ø§Ø²: PDFØŒ JPGØŒ JPEGØŒ PNG. Ø­Ø¯Ø§Ú©Ø«Ø± Ø§Ù†Ø¯Ø§Ø²Ù‡ ÙØ§ÛŒÙ„: Û±Û° Ù…Ú¯Ø§Ø¨Ø§ÛŒØª. Ø¨Ø§Ø±Ú¯Ø°Ø§Ø±ÛŒ Ù‡ÛŒÚ† Ù…Ø¯Ø±Ú© Ø§Ù„Ø²Ø§Ù…ÛŒ Ù†ÛŒØ³Øª.</p>
+            <p class="upload-note">فرمت‌های مجاز: PDF، JPG، JPEG، PNG. حداکثر اندازه فایل: ۱۰ مگابایت. بارگذاری هیچ مدرک الزامی نیست.</p>
 
             <div class="field">
-              <label>Ù¾Ø§Ø³Ù¾ÙˆØ±Øª</label>
-              <div class="file-upload-area" data-doc-type="Ù¾Ø§Ø³Ù¾ÙˆØ±Øª">
-                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="Ù¾Ø§Ø³Ù¾ÙˆØ±Øª" />
+              <label>پاسپورت</label>
+              <div class="file-upload-area" data-doc-type="پاسپورت">
+                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="پاسپورت" />
                 <div class="file-upload-label">
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="upload-icon">
                     <path d="M12 16V4M12 4l-4 4M12 4l4 4M4 20h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <span>ÙØ§ÛŒÙ„ Ø±Ø§ Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ ÛŒØ§ Ø¨Ú©Ø´ÛŒØ¯ Ùˆ Ø±Ù‡Ø§ Ú©Ù†ÛŒØ¯</span>
+                  <span>فایل را انتخاب کنید یا بکشید و رها کنید</span>
                 </div>
               </div>
             </div>
 
             <div class="field">
-              <label>ØªØ°Ú©Ø±Ù‡</label>
-              <div class="file-upload-area" data-doc-type="ØªØ°Ú©Ø±Ù‡">
-                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="ØªØ°Ú©Ø±Ù‡" />
+              <label>تذکره</label>
+              <div class="file-upload-area" data-doc-type="تذکره">
+                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="تذکره" />
                 <div class="file-upload-label">
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="upload-icon">
                     <path d="M12 16V4M12 4l-4 4M12 4l4 4M4 20h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <span>ÙØ§ÛŒÙ„ Ø±Ø§ Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ ÛŒØ§ Ø¨Ú©Ø´ÛŒØ¯ Ùˆ Ø±Ù‡Ø§ Ú©Ù†ÛŒØ¯</span>
+                  <span>فایل را انتخاب کنید یا بکشید و رها کنید</span>
                 </div>
               </div>
             </div>
 
             <div class="field">
-              <label>Ù…Ú©Ø§ØªØ¨Ø§Øª ARAP</label>
-              <div class="file-upload-area" data-doc-type="Ù…Ú©Ø§ØªØ¨Ø§Øª ARAP">
-                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="Ù…Ú©Ø§ØªØ¨Ø§Øª ARAP" />
+              <label>مکاتبات ARAP</label>
+              <div class="file-upload-area" data-doc-type="مکاتبات ARAP">
+                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="مکاتبات ARAP" />
                 <div class="file-upload-label">
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="upload-icon">
                     <path d="M12 16V4M12 4l-4 4M12 4l4 4M4 20h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <span>ÙØ§ÛŒÙ„ Ø±Ø§ Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ ÛŒØ§ Ø¨Ú©Ø´ÛŒØ¯ Ùˆ Ø±Ù‡Ø§ Ú©Ù†ÛŒØ¯</span>
+                  <span>فایل را انتخاب کنید یا بکشید و رها کنید</span>
                 </div>
               </div>
             </div>
 
             <div class="field">
-              <label>Ù†Ø§Ù…Ù‡ Ø±Ø¯ Ø¯Ø±Ø®ÙˆØ§Ø³Øª</label>
-              <div class="file-upload-area" data-doc-type="Ù†Ø§Ù…Ù‡ Ø±Ø¯ Ø¯Ø±Ø®ÙˆØ§Ø³Øª">
-                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="Ù†Ø§Ù…Ù‡ Ø±Ø¯ Ø¯Ø±Ø®ÙˆØ§Ø³Øª" />
+              <label>نامه رد درخواست</label>
+              <div class="file-upload-area" data-doc-type="نامه رد درخواست">
+                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="نامه رد درخواست" />
                 <div class="file-upload-label">
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="upload-icon">
                     <path d="M12 16V4M12 4l-4 4M12 4l4 4M4 20h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <span>ÙØ§ÛŒÙ„ Ø±Ø§ Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ ÛŒØ§ Ø¨Ú©Ø´ÛŒØ¯ Ùˆ Ø±Ù‡Ø§ Ú©Ù†ÛŒØ¯</span>
+                  <span>فایل را انتخاب کنید یا بکشید و رها کنید</span>
                 </div>
               </div>
             </div>
 
             <div class="field">
-              <label>Ù†ØªÛŒØ¬Ù‡ Review</label>
-              <div class="file-upload-area" data-doc-type="Ù†ØªÛŒØ¬Ù‡ Review">
-                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="Ù†ØªÛŒØ¬Ù‡ Review" />
+              <label>نتیجه Review</label>
+              <div class="file-upload-area" data-doc-type="نتیجه Review">
+                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="نتیجه Review" />
                 <div class="file-upload-label">
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="upload-icon">
                     <path d="M12 16V4M12 4l-4 4M12 4l4 4M4 20h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <span>ÙØ§ÛŒÙ„ Ø±Ø§ Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ ÛŒØ§ Ø¨Ú©Ø´ÛŒØ¯ Ùˆ Ø±Ù‡Ø§ Ú©Ù†ÛŒØ¯</span>
+                  <span>فایل را انتخاب کنید یا بکشید و رها کنید</span>
                 </div>
               </div>
             </div>
 
             <div class="field">
-              <label>Ù…Ø¯Ø§Ø±Ú© Ú©Ø§Ø±ÛŒ</label>
-              <div class="file-upload-area" data-doc-type="Ù…Ø¯Ø§Ø±Ú© Ú©Ø§Ø±ÛŒ">
-                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="Ù…Ø¯Ø§Ø±Ú© Ú©Ø§Ø±ÛŒ" />
+              <label>مدارک کاری</label>
+              <div class="file-upload-area" data-doc-type="مدارک کاری">
+                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="مدارک کاری" />
                 <div class="file-upload-label">
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="upload-icon">
                     <path d="M12 16V4M12 4l-4 4M12 4l4 4M4 20h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <span>ÙØ§ÛŒÙ„ Ø±Ø§ Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ ÛŒØ§ Ø¨Ú©Ø´ÛŒØ¯ Ùˆ Ø±Ù‡Ø§ Ú©Ù†ÛŒØ¯</span>
+                  <span>فایل را انتخاب کنید یا بکشید و رها کنید</span>
                 </div>
               </div>
             </div>
 
             <div class="field">
-              <label>Ù…Ø¯Ø§Ø±Ú© Ø§Ø¹Ø¶Ø§ÛŒ Ø®Ø§Ù†ÙˆØ§Ø¯Ù‡</label>
-              <div class="file-upload-area" data-doc-type="Ù…Ø¯Ø§Ø±Ú© Ø§Ø¹Ø¶Ø§ÛŒ Ø®Ø§Ù†ÙˆØ§Ø¯Ù‡">
-                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="Ù…Ø¯Ø§Ø±Ú© Ø§Ø¹Ø¶Ø§ÛŒ Ø®Ø§Ù†ÙˆØ§Ø¯Ù‡" />
+              <label>مدارک اعضای خانواده</label>
+              <div class="file-upload-area" data-doc-type="مدارک اعضای خانواده">
+                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="مدارک اعضای خانواده" />
                 <div class="file-upload-label">
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="upload-icon">
                     <path d="M12 16V4M12 4l-4 4M12 4l4 4M4 20h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <span>ÙØ§ÛŒÙ„ Ø±Ø§ Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ ÛŒØ§ Ø¨Ú©Ø´ÛŒØ¯ Ùˆ Ø±Ù‡Ø§ Ú©Ù†ÛŒØ¯</span>
+                  <span>فایل را انتخاب کنید یا بکشید و رها کنید</span>
                 </div>
               </div>
             </div>
 
             <div class="field">
-              <label>Ù…Ø¯Ø§Ø±Ú© ØªÙ‡Ø¯ÛŒØ¯ / Ø§Ù…Ù†ÛŒØªÛŒ</label>
-              <div class="file-upload-area" data-doc-type="Ù…Ø¯Ø§Ø±Ú© ØªÙ‡Ø¯ÛŒØ¯ / Ø§Ù…Ù†ÛŒØªÛŒ">
-                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="Ù…Ø¯Ø§Ø±Ú© ØªÙ‡Ø¯ÛŒØ¯ / Ø§Ù…Ù†ÛŒØªÛŒ" />
+              <label>مدارک تهدید / امنیتی</label>
+              <div class="file-upload-area" data-doc-type="مدارک تهدید / امنیتی">
+                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="مدارک تهدید / امنیتی" />
                 <div class="file-upload-label">
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="upload-icon">
                     <path d="M12 16V4M12 4l-4 4M12 4l4 4M4 20h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <span>ÙØ§ÛŒÙ„ Ø±Ø§ Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ ÛŒØ§ Ø¨Ú©Ø´ÛŒØ¯ Ùˆ Ø±Ù‡Ø§ Ú©Ù†ÛŒØ¯</span>
+                  <span>فایل را انتخاب کنید یا بکشید و رها کنید</span>
                 </div>
               </div>
             </div>
 
             <div class="field">
-              <label>Ù…Ø¯Ø§Ø±Ú© Ø§Ù‚Ø§Ù…Øª</label>
-              <div class="file-upload-area" data-doc-type="Ù…Ø¯Ø§Ø±Ú© Ø§Ù‚Ø§Ù…Øª">
-                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="Ù…Ø¯Ø§Ø±Ú© Ø§Ù‚Ø§Ù…Øª" />
+              <label>مدارک اقامت</label>
+              <div class="file-upload-area" data-doc-type="مدارک اقامت">
+                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="مدارک اقامت" />
                 <div class="file-upload-label">
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="upload-icon">
                     <path d="M12 16V4M12 4l-4 4M12 4l4 4M4 20h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <span>ÙØ§ÛŒÙ„ Ø±Ø§ Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ ÛŒØ§ Ø¨Ú©Ø´ÛŒØ¯ Ùˆ Ø±Ù‡Ø§ Ú©Ù†ÛŒØ¯</span>
+                  <span>فایل را انتخاب کنید یا بکشید و رها کنید</span>
                 </div>
               </div>
             </div>
 
             <div class="field">
-              <label>Ø³Ø§ÛŒØ± Ù…Ø¯Ø§Ø±Ú©</label>
-              <div class="file-upload-area" data-doc-type="Ø³Ø§ÛŒØ± Ù…Ø¯Ø§Ø±Ú©">
-                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="Ø³Ø§ÛŒØ± Ù…Ø¯Ø§Ø±Ú©" />
+              <label>سایر مدارک</label>
+              <div class="file-upload-area" data-doc-type="سایر مدارک">
+                <input type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" data-doc-type="سایر مدارک" />
                 <div class="file-upload-label">
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="upload-icon">
                     <path d="M12 16V4M12 4l-4 4M12 4l4 4M4 20h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <span>ÙØ§ÛŒÙ„ Ø±Ø§ Ø§Ù†ØªØ®Ø§Ø¨ Ú©Ù†ÛŒØ¯ ÛŒØ§ Ø¨Ú©Ø´ÛŒØ¯ Ùˆ Ø±Ù‡Ø§ Ú©Ù†ÛŒØ¯</span>
+                  <span>فایل را انتخاب کنید یا بکشید و رها کنید</span>
                 </div>
               </div>
             </div>
@@ -592,8 +592,8 @@
               </svg>
             </span>
             <div>
-              <h2>Ø¨Ø±Ø±Ø³ÛŒ Ù†Ù‡Ø§ÛŒÛŒ Ùˆ Ø§Ø±Ø³Ø§Ù„</h2>
-              <p>Ù„Ø·ÙØ§Ù‹ Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø®ÙˆØ¯ Ø±Ø§ Ø¨Ø±Ø±Ø³ÛŒ Ú©Ø±Ø¯Ù‡ Ùˆ Ø³Ù¾Ø³ Ø§Ø±Ø³Ø§Ù„ Ú©Ù†ÛŒØ¯.</p>
+              <h2>بررسی نهایی و ارسال</h2>
+              <p>لطفاً معلومات خود را بررسی کرده و سپس ارسال کنید.</p>
             </div>
           </div>
 
@@ -603,14 +603,14 @@
             <hr class="divider" />
 
             <div class="field">
-              <label for="additionalInformation">Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø§Ø¶Ø§ÙÛŒ</label>
-              <textarea id="additionalInformation" name="additionalInformation" rows="4" placeholder="Ù‡Ø± Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø§Ø¶Ø§ÙÛŒ Ú©Ù‡ Ù…ÛŒâ€ŒØ®ÙˆØ§Ù‡ÛŒØ¯ Ø§Ø¶Ø§ÙÙ‡ Ú©Ù†ÛŒØ¯..."></textarea>
+              <label for="additionalInformation">معلومات اضافی</label>
+              <textarea id="additionalInformation" name="additionalInformation" rows="4" placeholder="هر معلومات اضافی که می‌خواهید اضافه کنید..."></textarea>
             </div>
 
             <div class="field">
               <label class="checkbox-label">
                 <input type="checkbox" id="confirmation" name="confirmation" />
-                <span>ØªØ£ÛŒÛŒØ¯ Ù…ÛŒâ€ŒÚ©Ù†Ù… Ú©Ù‡ Ù…Ø¹Ù„ÙˆÙ…Ø§Øª ÙÙˆÙ‚ ØµØ­ÛŒØ­ Ø§Ø³Øª.</span>
+                <span>تأیید می‌کنم که معلومات فوق صحیح است.</span>
               </label>
               <span class="error-msg" id="error-confirmation"></span>
             </div>
@@ -620,13 +620,13 @@
         <!-- ============ NAVIGATION ============ -->
         <div class="form-nav" id="formNav">
           <button type="button" class="btn btn-secondary" id="prevBtn" style="display:none;">
-            Ù‚Ø¨Ù„ÛŒ
+            قبلی
           </button>
           <button type="button" class="btn btn-primary" id="nextBtn">
-            Ø¨Ø¹Ø¯ÛŒ
+            بعدی
           </button>
           <button type="button" class="btn btn-submit" id="submitBtn" style="display:none;">
-            Ø§Ø±Ø³Ø§Ù„ Ù…Ø¹Ù„ÙˆÙ…Ø§Øª
+            ارسال معلومات
           </button>
         </div>
       </div>
@@ -638,14 +638,14 @@
             <path d="M9 12l2 2 4-4M12 22a10 10 0 100-20 10 10 0 000 20z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
-        <h2>Ù…ÙˆÙÙ‚Ø§Ù†Ù‡ Ø§Ø±Ø³Ø§Ù„ Ø´Ø¯</h2>
+        <h2>موفقانه ارسال شد</h2>
         <div class="submission-id-box">
-          <span class="submission-id-label">Ø´Ù…Ø§Ø±Ù‡ Ø«Ø¨Øª:</span>
+          <span class="submission-id-label">شماره ثبت:</span>
           <span class="submission-id-value" id="submissionIdDisplay"></span>
         </div>
-        <p class="success-note">Ù„Ø·ÙØ§Ù‹ Ø§ÛŒÙ† Ø´Ù…Ø§Ø±Ù‡ Ø±Ø§ Ø¨Ø±Ø§ÛŒ Ù…Ø±Ø§Ø¬Ø¹Ø§Øª Ø¨Ø¹Ø¯ÛŒ Ù†Ø²Ø¯ Ø®ÙˆØ¯ Ù†Ú¯Ù‡ Ø¯Ø§Ø±ÛŒØ¯.</p>
+        <p class="success-note">لطفاً این شماره را برای مراجعات بعدی نزد خود نگه دارید.</p>
         <button type="button" class="btn btn-primary" id="newRequestBtn" style="margin-top:1.5rem;">
-          Ø«Ø¨Øª Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ø¬Ø¯ÛŒØ¯
+          ثبت درخواست جدید
         </button>
       </div>
 
@@ -660,7 +660,7 @@
 
     <!-- ===================== FOOTER ===================== -->
     <footer class="site-footer">
-      <p>Ø³ÛŒØ³ØªÙ…  ÙÙˆØ±Ù… ARAP &copy; 2026</p>
+      <p>سیستم  فورم ARAP &copy; 2026</p>
     </footer>
 
     <script type="module" src="./script.js"></script>
